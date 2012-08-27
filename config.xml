@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "com.tealca.tracking"
+	version 	= "1.0.0">
+
+	<name>TEALCA Tracking</name>
+
+	<description>
+		Un aplicacion para el rastreo en linea de sus encomiendas
+	</description>
+
+	<author href="http://www.tealca.com"
+		email="sistemas@tealca.com">
+		Dpto. Sistemas - TEALCA
+	</author>
+
+	<icon src="icon.png" gap:role="default" />
+
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+
+</widget>

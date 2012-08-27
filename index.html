@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title> TEALCATracking
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="css/my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+        <script src="js/my.js" ></script>
+        
+    </head>
+    <body>
+        <!-- Home -->
+		
+        <div data-role="page" id="Inicio">
+			<div data-theme="b" data-role="header" data-position="fixed">
+					<h3> TEALCA Tracking </h3>
+			</div>
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li>
+						<a href="#Inicio" data-theme="" data-icon="home" class="ui-btn-active ui-state-persist">Inicio </a>
+					</li>
+					<li>
+						<a href="#Oficinas" data-theme="" data-icon="star">Oficinas</a>
+					</li>
+				</ul>
+			</div>            
+						
+            <div data-role="content" style="padding: 15px">
+			
+                <div style=" position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+                    <img src="img/fondo.png" alt="image" style="width:100%" />
+                   </div>
+                <form action="">
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <label for="NumeroGuia">
+                                Numero a Buscar
+                            </label>
+                            <input name="guia" id="NumeroGuia" placeholder="(numero de guia o referencia)" value="" type="text" />
+                        </fieldset>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="TipoBusqueda">
+                            Tipo de Busqueda
+                        </label>
+                        <select name="TipoBusqueda" id="TipoBusqueda" data-theme="b">
+                            <option value="guia">Envio Nacional </option>
+                            <option value="NotaRecoleccion">Nota de Recoleccion </option>
+                            <option value="guiatbox">Guia TEALCABox </option>
+                            <option value="tracking">Tracking Proveedor TBOX</option>
+                        </select>
+                    </div>
+                    <input type="submit" data-theme="b" data-icon="arrow-r" data-iconpos="right" value="Buscar" data-mini="true" />
+                </form>
+            </div>
+        </div>
+		
+		<div data-role="page" id="Oficinas">
+			<div data-theme="b" data-role="header" data-position="fixed">
+					<h3> TEALCA Tracking </h3>
+			</div>
+
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li>
+						<a href="#Inicio" data-theme="" data-icon="home" >Inicio </a>
+					</li>
+					<li>
+						<a href="#Oficinas" data-theme="" data-icon="star" class="ui-btn-active ui-state-persist">Oficinas</a>
+					</li>
+				</ul>
+			</div>		
+			<h3>Esta es la pagina de la oficinas...</h3>
+		</div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>
